@@ -1,13 +1,20 @@
 import React from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 export default class Landing extends React.Component {
   render() {
     return (
       <main className='content'>
-        <h1>DJ Khaled</h1>
+        <h1><marquee direction='right'>
+        <img style={{height: 50, width: 50}} src='https://appstickers-cdn.appadvice.com/1139426125/818333349/5dadd26571c0ffe4cb6f7298392d424b-5.gif' />
+        &nbsp; DJ Khaled &nbsp;
+        <img style={{height: 50, width: 50}} height='100' src='https://appstickers-cdn.appadvice.com/1139426125/818333349/5dadd26571c0ffe4cb6f7298392d424b-5.gif' />
+        </marquee>
+        </h1>
         <div className='flex'>
           <div className='row'>
-            <img src='http://www.billboard.com/files/styles/article_main_image/public/media/dj-khaled-you-mine-vid-2015-billboard-650.jpg' alt='Portrait of DJ Khaled' />
+
+          <img src='http://www.billboard.com/files/styles/article_main_image/public/media/dj-khaled-you-mine-vid-2015-billboard-650.jpg' alt='Portrait of DJ Khaled' />
           </div>
           <div className='row'>
             <p>Lorem Khaled Ipsum is a major key to success. Hammock talk come soon. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! The key to more success is to get a massage once a week, very important, major key, cloth talk. They will try to close the door on you, just open it. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail.</p>

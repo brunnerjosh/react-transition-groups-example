@@ -9,8 +9,8 @@ export default class TransitionRoutes extends React.Component {
   render() {
     const currentKey = this.props.location.pathname.split('/')[1] || '/';
     const timeout = {
-      enter: 300,
-      exit: 300
+      enter: 500,
+      exit: 500
     };
 
     return (

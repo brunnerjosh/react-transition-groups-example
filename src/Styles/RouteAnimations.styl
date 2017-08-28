@@ -4,28 +4,64 @@
   top: 64px; // move down for header
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 // added when component receives instructions to mount
 .fade-appear,
 .fade-enter {
   opacity: 0;
+  transform: rotate(720deg) scale(.3);
 }
 
 // added immediately afterward
 .fade-appear-active,
 .fade-enter-active {
-  transition: opacity 300ms linear;
+  transition: opacity 500ms ease, transform 500ms ease;
   opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
 
 // added when component receives instructions to unmount
 .fade-exit {
-  transition: opacity 300ms linear;
+  transition: opacity 500ms ease, transform 500ms ease;
   opacity: 1;
+  transform: rotate(720deg) scale(1);
 }
 
 // added immediately afterward
 .fade-exit-active {
   opacity: 0;
+  transform: rotate(-360deg) scale(.3);
+}
+
+
+////// PARTY PARROT SECTION ///////
+
+// added when component receives instructions to mount
+.partyparrot-appear,
+.partyparrot-enter {
+  opacity: 0;
+  transform: scale(.3);
+}
+
+// added immediately afterward
+.partyparrot-appear-active,
+.partyparrot-enter-active {
+  transition: opacity 1000ms ease, transform 1000ms ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+// added when component receives instructions to unmount
+.partyparrot-exit {
+  transition: opacity 1000ms ease, transform 1000ms ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+// added immediately afterward
+.partyparrot-exit-active {
+  opacity: 0;
+  transform: scale(.3);
 }
